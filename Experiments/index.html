@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grades Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--Alert message box-->
+    <div class="alert">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        Wagwan brethren, welcome aboard to my website!!!!!!!!
+    </div>
+    <!--Main body-->
+    <div class="container">
+        <div class="heading"> <!--Heading of the page-->
+            Grades calculator :) 
+        </div>
+        <div class="screen-body-item">
+            <div class="app">
+                <div class="form-group">
+                   <!-- <button onclick="testScoreNum()">How many test scores to input? </button> -->
+                    <!--Options for taking user input-->
+                    <!-- <button onclick="testScores()"></button> -->
+                    <label for="english">English</label>
+                    <input type="text" name="English" id="english" placeholder="ENGLISH" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="maths">Mathematics</label>
+                     <input type="text" name="Maths" id="maths" placeholder="MATHS" class="form-control">
+                 </div>
+                 <div class="form-group">
+                    <label for="physics">Physics</label>
+                    <input type="text" name="Physics" id="physics" placeholder="PHYSICS" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="accounting">Accounting</label>
+                    <input type="text" name="Accounting" id="accounting" placeholder="ACCOUNTING" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="info-tech">Information Technology</label>
+                    <input type="text" name="Information Tech" id="info-tech" placeholder="INFO TECH" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="history">History</label>
+                    <input type="text" name="History" id="history" placeholder="HISTORY" class="form-control">
+                </div>
+                <div>
+                    <button class="form-button" onclick="ScoreCalculator()"> <span>Show Percentage </span> </button>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!--Showing the results-->
+    <div class="form-group showdata">
+        <p id="showdata"></p>
+    </div>
+
+    <footer>
+        &copy; Jerome Limited Websites &trade;
+    </footer>
+
+    <!--external javascript file-->
+    <script src="script.js"></script>
+</body>
+</html>

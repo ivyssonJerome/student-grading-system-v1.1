@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+/*The whole webpage*/
+* {
+    background: rgb(54, 54, 54); /*Background of the entire webpage*/
+    font-family: 'Titillium Web', sans-serif; /*Font style of the webpage*/
+    margin: 0; /*Margins 0 top and bottom, and centers it horizontally*/
+    padding: 0; /*Sets the default value of the padding*/
+    box-sizing: border-box; /*Padding and borders are included in the width and height*/
+}
+
+/*Alert message box*/
+.alert {
+    padding: 20px; /*Padding 20 pixels top, right, left, and bottom*/
+    background-color: #029ef8; /*Background color of alert box*/
+    font-weight: bolder; /*Boldens the text*/
+    color: #170266; /*Font color of text inside alert box*/
+    margin-bottom: 15px; /*Margins 15 pixels bottom of the div*/
+}
+
+/*Close button*/
+.closebtn {
+    margin-left: 15px; /*Margins button 15 pixels left*/
+    background-color: #029ef8; /*Background color for the button*/
+    color: #c9ff07; /*Color of the x button*/
+    font-weight: bolder; /*Boldens the x button*/
+    float: right; /*Positions button right of the alert message box*/
+    font-size: 24px; /*Increments font by 24 pixels*/
+    line-height: 20px; /*Sets the line-height of the button to 20 pixels*/
+    cursor: pointer; /*Changes the cursor to a pointer*/
+    transition: 0.5s; /*Hovers over the button to transition it for 1/2 of a second*/
+}
+
+.closebtn:hover {
+    color: #170266; /*Color of button after mouse hovers*/
+}
+
+/*Heading*/
+.heading {
+    font-size: 36px; /*Font size of the heading*/
+    color: #06eeb8;
+}
+
+/*Input*/
+input[type=text] {
+    width: 100%; /*Width of the input text field*/
+    padding: 12px 20px; /*Adjusts the padding of the input text to 12 pixels top and bottom, and 20 pixels left and right*/
+    margin: 8px 0; /*Margins the input field 8 pixels top and bottom, and 0 left and right, and centers it vertically*/
+    background: #034b23; /*Background of the input field*/
+    caret-color: #034b23; /*Changes the color of the cursor line in the input text field*/
+    color: #06eeb8;
+    font-size: 18px;
+    box-sizing: border-box; /*Padding and borders are included in the width and height of the input text field*/
+    border: 3px solid #06eeb8; /*Border of the input text field*/
+    -webkit-transition: 0.5s; /**/
+    transition: 0.5s; /*Transitions the input field by 1/2 of a second*/
+    outline: none; /*Removes the black border outline of the input field*/
+}
+
+/*Placeholder*/
+::placeholder {
+    color: #06eeb8;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+/*Operates when clicked*/
+input[type=text]:focus {
+    border: 3px solid #00674f; /*Border of the input field*/
+    background: #06eeb8; /*Background of the input field*/
+    color: #00674f;
+    font-weight: bold;
+}
+
+
+/*Label*/
+label {
+    color: #06eeb8;
+}
+
+/*Input button*/
+.form-button {
+    display: inline-block; 
+    padding: 8px;
+    margin: 12px 0;
+    width: 250px;
+    color: #034b23;
+    background: #06eeb8;
+    font-size: 16px;
+    text-align: center;
+    border: 3px solid #00674f;
+    transition: all 0.8s;
+    cursor: pointer;
+    outline: none;
+}
+
+.form-button span {
+    cursor: pointer;
+    background: #06eeb8;
+    display: inline-block;
+    transition: 0.8s;
+}
+
+.form-button span:after {
+    content: '\00bb';
+    font-size: 16px;
+    font-weight: bold;
+    opacity: 0;
+    top: 0;
+    right: -30px;
+    transition: 0.8s;
+}
+
+.form-button:hover span {
+    padding-right: 25px;
+}
+
+.form-button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.container {
+    flex: 0 1 700px;
+    margin: auto;
+    padding: 10px;
+}
+
+.screen-body-item {
+    flex: 1;
+    padding: 50px;
+}
+
+input {
+    margin: 10px 10px 10px;
+}
+
+.showdata p {
+    color: #034b23;
+    background: #06eeb8;
+    border: 4px solid #034b23;
+    font-size: 18px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin: 12px;
+}
+
+footer {
+    color: #06eeb8;
+    font-size: 16px;
+    padding: 20px;
+}
